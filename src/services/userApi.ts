@@ -1,0 +1,44 @@
+// "use server"
+
+// import { client } from "@/sanity/lib/client";
+// import { auth, currentUser } from "@clerk/nextjs/server"
+
+// export async function clerkGetUser() {
+
+//   const { userId } = await auth();
+//   const user = await currentUser();
+
+
+//   const userName = `${user?.firstName} ${user?.lastName}`;
+//   const userEmail = user?.externalAccounts[0].emailAddress;
+//   const userImage = user?.imageUrl;
+
+//   return {
+//     userId,
+//     userName,
+//     userEmail,
+//     userImage
+//   }
+
+// }
+
+// export async function sanityUserPost(){
+ 
+//   const user = await clerkGetUser()
+ 
+//   const userObject ={
+//     _type:"user",
+//     _id: `user-${user.userId}`,
+//     name: user.userName,
+//     email: user.userEmail,
+//     userId: user.userId,
+//     image: user.userImage
+
+
+//   }
+
+
+//   const res =await client.createOrReplace(userObject)
+// }
+
+ 
